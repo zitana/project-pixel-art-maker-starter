@@ -18,9 +18,16 @@ function makeGrid() {
     for (var columns = 0; columns < width; columns++) {
       let cell = row.insertCell();
       //Add event listener to each cell
-      cell.addEventListener("click", function() {
+      cell.addEventListener("click", function(event) {
+        // if (cell.style.backgroundColor != '#ffffff') {
         cell.style.backgroundColor = colorPicker.value;
+      // } else {
+      //   cell.style.backgroundColor = '#ffffff';
+      // }
       });
+      cell.addEventListener("dblclick", function(event){
+       cell.style.backgroundColor = "";
+     });
     }
   }
 };

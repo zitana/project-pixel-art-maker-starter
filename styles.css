@@ -1,5 +1,7 @@
 body {
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 h1 {
@@ -9,7 +11,14 @@ h1 {
 }
 
 h2 {
+    font-family: 'Black Ops One', cursive;
+    font-size: 36px;
+    margin: 0.2em;
+}
+
+h3 {
     margin: 1em 0 0.25em;
+    font-family: 'Black Ops One', cursive;
 }
 
 h2:first-of-type {
@@ -37,4 +46,35 @@ td {
 
 input[type=number] {
     width: 6em;
+    display:block;
+}
+
+input[type=submit] {
+  background-color: #000;
+  color: #fff;
+  padding:5px 15px;
+  margin: 5px;
+  cursor:pointer;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+#utils {
+  float: left ;
+  width: 20% ;
+  border: 5px solid black;
+  padding: 10px;
+}
+#design_canvas {
+  float: right;
+  width: 75%;
+}
+
+label {
+    text-align: right;
+    clear: both;
+    float:left;
+    margin-right:5px;
+    display: inline-block;
+    width: 100px;
 }
