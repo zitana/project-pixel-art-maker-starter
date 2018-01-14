@@ -14,9 +14,8 @@ function makeGrid() {
   let height, width;
   height = $('#input_height').val();
   width = $("#input_width").val();
-  //Clear previous table
+  //Clear previouas table
   canvas.children().remove();
-
   //Create the table
   for (var rows = 0; rows < height; rows++) {
     canvas.append('<tr></tr>')
@@ -24,7 +23,6 @@ function makeGrid() {
       $('tr').last().append('<td></td>');
     }
   }
-  canvas.html(grid);
 };
 
 //Gather all event listeners in one method
