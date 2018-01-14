@@ -78,3 +78,8 @@ label {
     display: inline-block;
     width: 100px;
 }
+
+img {
+  height: 20px;
+  width: auto;
+}
