@@ -36,6 +36,9 @@ function addEventListeners() {
   colorPicker.change(function () {
     color = colorPicker.val();
   });
+  colorPicker.on('click' , function () {
+    color = colorPicker.val();
+  });
   //Switch color to white when eraser image is clicked
   eraser.on('click' , function () {
     color = '#ffffff';
