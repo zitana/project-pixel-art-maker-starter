@@ -1,6 +1,6 @@
 //Define constants
-const canvas = $("#pixel_canvas");
-const colorPicker = $("#colorPicker");
+const canvas = $('#pixel_canvas');
+const colorPicker = $('#colorPicker');
 const sizePicker = $('#sizePicker');
 const eraser = $('img');
 //Define variables
@@ -11,19 +11,18 @@ addEventListeners();
 
 //Define makeGrid function
 function makeGrid() {
-  let height, width, grid;
+  let height, width;
   height = $('#input_height').val();
   width = $("#input_width").val();
   //Clear previous table
-  canvas.html("");
+  canvas.children().remove();
 
   //Create the table
   for (var rows = 0; rows < height; rows++) {
-    grid += ("<tr>")
+    canvas.append('<tr></tr>')
     for (var columns = 0; columns < width; columns++) {
-      grid += ("<td></td>")
+      $('tr').last().append('<td></td>');
     }
-    grid += ("</tr>")
   }
   canvas.html(grid);
 };
